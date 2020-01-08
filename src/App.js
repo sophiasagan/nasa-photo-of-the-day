@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://api.nasa.gov/planetary/apod?api_key=5OEsUVedFGlY1ldUSWVhkLq3hXv1rda1APz6bfRT")
+      .get("https://api.nasa.gov/planetary/apod?api_key=pNeCXZNd11n4j6gyMxZstTIWhZLRciOqm4LSiDxy")
       .then((res) => {
         console.log(res);
         setPhoto(res.data);
