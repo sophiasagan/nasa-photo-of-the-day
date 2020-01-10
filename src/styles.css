@@ -1,0 +1,32 @@
+/* .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  button {
+    background: transparent;
+  border-radius: 3px;
+  border: 2px solid palegoldenrod;
+  color: palevioletred;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+
+  &:hover {
+    background-color: green;
+  }; */
+
+  /* ${props =>
+    props.type === "primary" &&
+    css`
+      background: palevioletred;
+      color: white;
+    `}
+
+  ${props =>
+    props.type === "secondary" &&
+    css`
+      background: red;
+      color: yellow;
+    `} */
+  
+  
