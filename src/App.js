@@ -16,26 +16,45 @@ const Button = styled.a`
   text-decoration: none;
   margin: 5rem 0 0 .5rem;
   padding: 0.2rem 1rem;
-  text-shadow: 1px 1px 5px black, 0 0 25px blue, 0 0 10px darkblue;
+  
 
   &:hover {
     background-color: purple;
   }
 
-  ${props =>
-    props.type === "primary" &&
-    css`
-      background: white;
-      color: white;
-    `}
+  ${props => props.primary && css`
+  background: white;
+  color: white;
+  text-shadow: 1px 1px 5px black, 0 0 25px blue, 0 0 10px darkblue;
+`}
 
-  ${props =>
-    props.type === "secondary" &&
-    css`
-      background: white;
-      color: blue;
-    `}
+${props => props.secondary && css`
+  background: white;
+  color: blue;
+  text-shadow: 1px 1px 5px black, 0 0 25px blue, 0 0 10px darkblue;
+`}
+
+
 `;
+
+//   ${props =>
+//     props.type === "primary" &&
+//     css`
+//       background: white;
+//       color: white;
+//     `}
+
+//   ${props =>
+//     props.type === "secondary" &&
+//     css`
+//       background: white;
+//       color: blue;
+//     `}
+// `;
+
+const Container = styled.div`
+  text-align: center;
+`
 
 
 function App() {
@@ -60,12 +79,12 @@ function App() {
     <div className="App">
       <NasaCard title={photo.title} scr={photo.url} description={photo.explanation} date={photo.date}/>
       <Button 
-      color="primary" 
+      primary
       href="https://apod.nasa.gov/apod/archivepix.html"
       target="_blank"
       rel="noopener">Archive</Button>
       <Button 
-      color="secondary"
+      secondary
       href="https://www.nasa.gov/"
       target="_blank"
       rel="noopener">Visit Nasa.Gov</Button>

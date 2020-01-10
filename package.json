@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.8.3",
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
     "node-sass": "^4.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    
     "reactstrap": "^8.2.0",
     "styled-components": "^4.4.1"
   },
