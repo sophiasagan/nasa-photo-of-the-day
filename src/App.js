@@ -14,7 +14,7 @@ const Button = styled.a`
   border: 1px solid white;
   color: white;
   text-decoration: none;
-  margin: 5rem 0 0 .5rem;
+  margin: 0rem 0 0 .5rem;
   padding: 0.2rem 1rem;
   
 
